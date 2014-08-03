@@ -1,0 +1,2 @@
+# hasPermission
+Has min. permissions

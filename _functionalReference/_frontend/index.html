@@ -1,0 +1,264 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="index,follow">
+
+  <title>FrontEnd</title>
+  <link rel="stylesheet" href="../../app/webroot/css/main.css">
+  <script src="../../app/webroot/bower_components/sprockets-modernizr/modernizr.js"></script>
+</head>
+<body>
+
+<div class="overlay" id="login">
+
+    <div class="js-close-overlay overlay-close">
+      <i class="fa fa-times"></i>
+    </div>
+
+    <div class="overlay-inner">
+
+      <h2 class="h4">Login</h2>
+
+
+      <!--<div class="form-msg form-msg--error">
+        <div class="form-msg-icon"><i class="fa fa-warning"></i></div>
+        <div class="form-msg-inner">
+          <div class="form-msg-title">Error</div>
+          <div class="form-msg-text">Something went wrong!</div>
+        </div>
+      </div><!--.form-msg-->
+
+      <form action="#">
+        <div class="form-control">
+          <input type="email" required name="name" id="name" placeholder="E-Mail Address">
+        </div>
+        <div class="form-control">
+          <input type="password" required name="password" id="password" placeholder="Enter Password" class="password-helper">
+        </div>
+        <div>
+          <button type="submit" class="btn btn-full btn-primary">Einloggen</button>
+        </div>
+        <div>
+          <label for="rememberMe">
+            <input type="checkbox" id="rememberMe"> Remember me
+          </label>
+        </div>
+
+      </form>
+
+      <ul class="overlay-links">
+        <li><a href="#">Forgot Password?</a></li>
+        <li><a href="#">Forgot E-Mail?</a></li>
+      </ul><!-- .overlay-links -->
+
+    </div><!-- .overlay-inner -->
+
+  <div class="overlay-inner-alt">
+    <button type="submit" class="btn btn-no-margin btn-full">Login with Social</button>
+  </div><!-- .overlay-inner-alt -->
+
+</div><!-- #login -->
+
+<div class="overlay" id="dialog">
+
+    <div class="js-close-overlay overlay-close">
+      <i class="fa fa-times"></i>
+    </div>
+
+    <div class="overlay-inner">
+      <h2 class="h4">Dialog</h2>
+      <p>Do you really want to do that?</p>
+
+      <div class="overlay-buttons">
+        <a href="#" class="btn js-close-overlay">No, cancel</a>
+        <a href="#" class="btn btn-primary">Yes!</a>
+      </div>
+
+    </div>
+
+</div><!-- #dialog -->
+
+<div class="topBar">
+  <div class="container">
+    <a href="/" class="logo">Logo</a>
+
+    <div class="notifications">
+      <ul>
+        <li class="dropdown">
+          <a href="#"><i class="fa fa-users"></i> <span class="badge">3</span></a>
+          <div class="dropdown-container">
+            <div class="dropdown-title">
+              Friendrequests
+            </div>
+            <div class="dropdown-inner">
+
+            </div>
+            <div class="dropdown-footer">
+              <a href="#">Show all</a>
+            </div>
+          </div><!-- .dropdown-container -->
+        </li>
+        <li class="dropdown">
+          <a href="#"><i class="fa fa-comments"></i></a>
+          <div class="dropdown-container">
+            <div class="dropdown-title">
+              Messages <a href="#">New message</a>
+            </div>
+            <div class="dropdown-empty">
+              No new messages.
+            </div>
+          </div><!-- .dropdown-container -->
+        </li>
+        <li class="dropdown">
+          <a href="#"><i class="fa fa-bell"></i> <span class="badge">99+</span></a>
+          <div class="dropdown-container">
+            <div class="dropdown-title">
+              Notifications <a href="#">Mark all as read</a>
+            </div>
+            <div class="dropdown-inner">
+
+            </div>
+            <div class="dropdown-footer">
+              <a href="#">Show all</a>
+            </div>
+          </div><!-- .dropdown-container -->
+        </li>
+      </ul>
+    </div><!-- .notifications -->
+
+    <div class="topbar-buttons">
+      <a href="#" class="btn">Register</a>
+      <a href="#login" class="btn js-open-overlay">Login</a>
+    </div><!-- .topbar-buttons -->
+
+  </div><!-- .container -->
+</div><!-- .topbar -->
+
+<!--
+<div class="bubble">
+  <div class="container">
+    <div class="bubble-head">Notification</div>
+    <div class="bubble-text">Peter replied to your topic: <a href="#">"My Hardware Setup"</a></div>
+  </div><!-- .container -->
+<!--</div><!-- .bubble -->
+
+
+<div class="globalContainer">
+
+  <header class="header">
+    <div class="header-overlay"></div>
+    <div class="container">
+
+      <div class="hero">
+        <h1 class="hero-head">Header</h1>
+        <p class="hero-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, architecto!</p>
+      </div><!-- .hero -->
+
+    </div><!-- .container -->
+  </header><!-- .header -->
+
+
+  <div class="subNav">
+    <div class="container">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Teams</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Topics</a></li>
+      </ul>
+    </div><!-- .container -->
+  </div><!-- .subNav -->
+
+
+  <div class="filterBar">
+    <div class="container">
+      <ul>
+        <li><span><i class="fa fa-filter"></i> Filter:</span></li>
+        <li><a href="#" class="active">A-Z </a></li>
+        <li><a href="#">Teams</a></li>
+        <li><a href="#">Players</a></li>
+        <li><a href="#">Ranking</a></li>
+        <li><a href="#"><i class="fa fa-caret-up"></i></a></li>
+        <li><a href="#"><i class="fa fa-caret-down"></i></a></li>
+      </ul>
+    </div><!-- .container -->
+  </div><!-- .filterBar -->
+
+  <div class="mainContent">
+    <div class="container">
+
+      <div class="fullSize box box--white">
+        <h2>Modals</h2>
+        <p>
+          <a href="#dialog" class="btn btn-primary js-open-overlay">Dialog</a>
+        </p>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ipsam, veritatis suscipit necessitatibus aliquid quis, doloribus quisquam esse distinctio, asperiores at magni sed unde earum vero dolore, debitis neque ratione.</p>
+        <h2>Buttons</h2>
+        <p>
+          <a href="#" class="btn btn-primary">Primary</a>
+          <a href="#" class="btn">Default</a>
+          <a href="#" class="btn btn-danger">Danger/Error</a>
+          <a href="#" class="btn btn-success">Success</a>
+        </p>
+      </div><!-- .fullBox -->
+
+      <div class="fullBox box">
+        <h2>Grid</h2>
+      </div>
+
+      <div class="halfSize box box--white">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis facilis aspernatur asperiores maiores, ipsum dolorum atque eum animi, recusandae ex!</p>
+      </div>
+
+      <div class="halfSize box box--white">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis facilis aspernatur asperiores maiores, ipsum dolorum atque eum animi, recusandae ex!</p>
+      </div>
+
+      <div class="quarterSize box box--white">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="quarterSize box box--white">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="quarterSize box box--white">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="quarterSize box box--white">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+    </div><!-- .container -->
+  </div><!-- .mainContent -->
+
+</div><!-- .globalContainer -->
+
+
+<div class="status-bar">
+  <div class="client-status"></div>
+</div><!-- .status-bar -->
+
+
+<footer class="footer">
+  <div class="container">
+    <ul>
+      <li><a href="#">AGB</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Impressum</a></li>
+    </ul>
+  </div><!-- .container -->
+</footer><!-- .footer -->
+
+
+<!-- Scripts -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../app/webroot/js/jquery-1.10.2.min.js"><\/script>')</script>
+  <script src="../../app/webroot/js/main.js"></script>
+</body>
+</html>

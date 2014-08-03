@@ -1,0 +1,2 @@
+# hasExactPermission
+Has exact permissions

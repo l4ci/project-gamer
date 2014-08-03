@@ -1,0 +1,8 @@
+CREATE TABLE users (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nick VARCHAR(50) NOT NULL,
+    email VARCHAR(254) NOT NULL,
+    pw VARCHAR(200) NOT NULL,
+    date_registered DATETIME DEFAULT NOT NULL,
+    date_last_logged_in DATETIME DEFAULT NOT NULL
+);
