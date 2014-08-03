@@ -1,0 +1,30 @@
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.header{
+  background: url('http://gofreaks.eu/content/02-games/01-bf4/cover.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  position: relative;
+  z-index: 50;
+
+  .header-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 51;
+    background: rgba($color-primary,.4);
+  }
+  .container{
+    z-index: 52;
+  }
+
+  .hero{
+    @include span(12);
+
+    text-align: left;
+    padding: 4rem 0;
+  }
+}

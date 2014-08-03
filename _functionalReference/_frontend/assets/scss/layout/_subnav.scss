@@ -1,0 +1,36 @@
+/* SUB NAVIGATION
+   ========================================================================== */
+.subNav{
+  background: $color-grey--dark;
+  height: 100%;
+
+  ul{
+    @include horizontal-list;
+    @include span(12);
+
+    li{
+      font-size: $font-size-h6;
+      border-left: 1px solid rgba(black,.1);
+
+      &:last-child{
+        border-right: 1px solid rgba(black,.1);
+      }
+    }
+
+    a{
+      display: block;
+      padding: 1rem;
+      background: $color-grey--dark;
+      color: $color-grey--light;
+      border-bottom: 3px solid transparent;
+
+      &:hover{
+        background: lighten($color-grey--dark,2%);
+        color: white;
+      }
+      &.active{
+        border-bottom-color: $color-primary;
+      }
+    }
+  }
+}

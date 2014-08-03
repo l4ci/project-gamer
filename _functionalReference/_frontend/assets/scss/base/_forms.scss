@@ -1,0 +1,164 @@
+/**
+ * FORM MESSAGES
+ * Small messages that can be printed out before a form
+ */
+.form-msg{
+  position: relative;
+  display: block;
+  margin: 1rem 0;
+  border: 1px solid rgba(white,.1);
+  font-size: .9rem;
+  padding: .6rem 1rem;
+  border-radius: $border-radius;
+  color: rgba(white,.8);
+  background: rgba(black,.1);
+
+  &.form-msg--error{
+    color: rgba(white,.8);
+    background: $color-red;
+  }
+  &.form-msg--info{
+    color: rgba(black,.8);
+    background: $color-yellow;
+  }
+  &.form-msg--success{
+    color: rgba(white,.8);
+    background: $color-green;
+  }
+
+  .form-msg-close{
+    position: absolute;
+    top: .3rem;
+    right: .5rem;
+    color: #fff;
+    opacity: .7;
+
+    &:hover{
+      cursor: pointer;
+      opacity: .9;
+    }
+  }
+
+  .form-msg-icon{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 1.2rem 0 .4rem;
+    //float: left;
+    //display: inline-block;
+    //margin: .5rem .7rem .5rem 0;
+  }
+  .form-msg-inner{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .form-msg-title{
+    font-weight: bold;
+  }
+  .form-msg-text{
+    font-size: .8rem;
+  }
+}
+
+/**
+ * Form Control
+ * surround elements with form control to gain position: relative
+ **/
+.form-control{
+  position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+  position: relative;
+  appearance: none;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: .6rem .8rem;
+  margin: .2rem 0;
+  font-size: $font-size-h6;
+  border: 1px solid rgba(white, .15);
+  color: rgba(white, .4);
+  border-radius: 2px;
+  background: rgba(black, 0.5);
+  letter-spacing: 1px;
+  text-shadow: none;
+
+  &::-webkit-input-placeholder{
+    color: rgba(white, .4);
+  }
+
+  &:hover{
+    border-color: rgba(white, .3);
+    color: rgba(white, .7);
+  }
+  &:focus{
+    border-color: $color-blue;
+    color: #fff;
+    outline: none;
+  }
+}
+
+//input:required:invalid{ // show all required input fields
+//
+//}
+input:focus:invalid {
+  border-color: $color-error;
+  box-shadow: none;
+}
+
+/**
+ * Passwort Helper
+ */
+input.password-helper{
+  padding-right: 3rem;
+}
+.password-helper-span{
+  position: absolute;
+  top: .85rem;
+  right: .5rem;
+  display: block;
+  padding: .2rem;
+  content:'SHOW';
+  font-size: .6rem;
+  font-weight: bold;
+  background: rgba(white,.2);
+  border-radius: $border-radius;
+
+  &:hover{
+    background: $color-blue;
+    cursor: pointer;
+  }
+}
+
+
+label{
+  font-size: .9rem;
+  //color: $color-blue;
+  color: rgba(white,.4);
+
+  &:hover{
+    cursor: pointer;
+    color: rgba(white,.6);
+  }
+}
+
+input[type="checkbox"]{
+  appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1rem .5rem 1rem 0;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2px;
+  background: $color-blue;
+
+  &:focus{
+    border-color: $color-blue;
+    color: #fff;
+    outline: none;
+  }
+}
+
+

@@ -1,0 +1,32 @@
+/* FILTER BAR
+   ========================================================================== */
+.filterBar{
+  text-align: right;
+  background: $color-grey--light;
+  border-bottom: 1px solid rgba(black,.1);
+
+  ul{
+    @include horizontal-list;
+
+    li{
+      font-size: $font-size-h7;
+    }
+
+    span,
+    a{
+      display: block;
+      padding: .5rem 1rem;
+      color: $color-grey--dark;
+      border-bottom: 3px solid transparent;
+    }
+
+    a{
+      &:hover{
+        background: rgba(black,.1);
+      }
+      &.active{
+        border-bottom-color: rgba(black,.2);
+      }
+    }
+  }
+}

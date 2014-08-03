@@ -1,0 +1,54 @@
+/* ==========================================================================
+   GRID
+   ========================================================================== */
+
+/* SUSY CONFIG
+   ========================================================================== */
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  container: 62.5em,
+  columns: 12,
+  gutters: 1/4,
+  gutter-position: split,
+  global-box-sizing: border-box
+);
+
+/* CONTAINER
+   ========================================================================== */
+.container{
+  @include container;
+
+  position: relative;
+  // max-width: 1000px;
+  height: 100%;
+
+  @include bp($bp-m){
+    width: 90%;
+  }
+}
+
+/* Sizes
+   ========================================================================== */
+.fullSize{
+  @include span(12);
+}
+.halfSize{
+  @include span(6);
+
+  @include bp($bp-m){
+    @include span(12);
+  }
+}
+.quarterSize{
+  @include span(3);
+
+  @include bp($bp-l){
+    @include span(6);
+  }
+  @include bp($bp-m){
+    @include span(12);
+  }
+
+}

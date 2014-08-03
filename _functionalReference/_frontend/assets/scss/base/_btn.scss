@@ -1,0 +1,95 @@
+.btn{
+  display: inline-block;
+  padding: .6rem .8rem;
+  margin: 1rem 0 0;
+  font-size: .9rem;
+  border-radius: $border-radius;
+  transition: all .2s;
+  border: none;
+  letter-spacing: 1px;
+  text-shadow: none;
+  box-shadow: 0 1px 1px rgba(black,.3),0 0 0 1px rgba(white,.15) inset;
+  background: rgba(black,.2);
+  color: $color-blue;
+
+  &.btn-full{
+    display: block;
+    width: 100%;
+  }
+  &.btn-no-margin{
+    margin: 0;
+  }
+
+  &:hover{
+    background: rgba(black,.3);
+    color: #fff;
+    outline: none;
+    box-shadow: 0 1px 1px rgba(black,.3),0 0 0 1px rgba(white,.3) inset;
+  }
+
+  &:active,
+  &:focus,
+  &:active:focus{
+    outline: none;
+    background: rgba(black,.1);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6) inset,0 0 0 1px rgba(255, 255, 255, 0.07) inset;
+  }
+
+  &.btn-primary{
+    background: $color-blue;
+    color: #fff;
+    background-image: linear-gradient(to bottom,$color-blue,$color-blue--dark);
+
+    &:hover{
+      background-image: linear-gradient(to bottom,$color-blue--light,$color-blue);
+      outline: none;
+    }
+
+    &:active,
+    &:focus,
+    &:active:focus{
+      outline: none;
+      background: $color-blue--dark;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6) inset,0 0 0 1px rgba(255, 255, 255, 0.07) inset;
+    }
+  }
+  &.btn-error,
+  &.btn-danger{
+    background: $color-red;
+    color: #fff;
+    background-image: linear-gradient(to bottom,$color-red,$color-red--dark);
+
+    &:hover{
+      background-image: linear-gradient(to bottom,$color-red--light,$color-red);
+      outline: none;
+    }
+
+    &:active,
+    &:focus,
+    &:active:focus{
+      outline: none;
+      background: $color-red--dark;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6) inset,0 0 0 1px rgba(255, 255, 255, 0.07) inset;
+    }
+  }
+
+  &.btn-success,
+  &.btn-okay{
+    background: $color-green;
+    color: #fff;
+    background-image: linear-gradient(to bottom,$color-green,$color-green--dark);
+
+    &:hover{
+      background-image: linear-gradient(to bottom,$color-green--light,$color-green);
+      outline: none;
+    }
+
+    &:active,
+    &:focus,
+    &:active:focus{
+      outline: none;
+      background: $color-green--dark;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6) inset,0 0 0 1px rgba(255, 255, 255, 0.07) inset;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+/* ==========================================================================
+   MAIN CONTENT
+   ========================================================================== */
+.mainContent{
+
+}
+
+.box{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+
+  &.box--white{
+    border-radius: $border-radius;
+    background: white;
+    border: 1px solid $color-grey--light;
+    padding: 1rem;
+  }
+}
+
+/* SIDE BAR
+   ========================================================================== */
+.sideBar{
+  @include span(3);
+
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0;
+  text-align: left;
+  border-radius: 5px;
+  overflow: hidden;
+
+
+  ul{
+    @include vertical-list;
+    background: $color-grey--light;
+    margin: 0;
+    padding: 0;
+
+    li{
+      font-size: $font-size-h6;
+      border-bottom: 1px solid rgba(white,.4);
+
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+
+    a{
+      display: block;
+      padding: .5rem 1rem;
+
+      color: $color-grey--dark;
+      border-left: 3px solid transparent;
+
+      &:hover{
+        background: rgba(black,.1);
+        border-left-color: $color-primary;
+      }
+      &.active{
+        border-left-color: $color-primary;
+      }
+    }
+  }
+}

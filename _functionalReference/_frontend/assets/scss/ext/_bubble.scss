@@ -1,0 +1,70 @@
+.bubble{
+  position: fixed;
+  top: $topbar-height;
+  z-index: 200;
+  width: 100%;
+  text-align: left;
+
+  .container{
+    background: $color-primary;
+    min-height: $topbar-height;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(black,.4);
+    border-radius: 0 0 5px 5px;
+  }
+
+  &.bubble--error{
+    .container{
+      background: $color-error;
+    }
+  }
+  &.bubble--success{
+    .container{
+      background: $color-success;
+    }
+  }
+  &.bubble--info{
+    .container{
+      background: $color-info;
+    }
+  }
+
+  .bubble-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #fff;
+    opacity: .4;
+
+    &:hover{
+      opacity: .9;
+      cursor: pointer;
+    }
+  }
+
+  .bubble-head,
+  .bubble-text{
+    color: #fff;
+    font-size: $font-size-h6;
+  }
+
+  .bubble-head{
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    border-right: 1px solid rgba(white,.2);
+
+  }
+  .bubble-text{
+    display: inline-block;
+  }
+
+  a{
+    color: rgba(white,.8);
+
+    &:hover{
+      color: white;
+    }
+  }
+}

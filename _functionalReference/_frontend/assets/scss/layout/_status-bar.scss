@@ -1,0 +1,34 @@
+.status-bar{
+  position: fixed;
+  bottom: 0;
+  right: 3rem;
+  background: $color-black;
+  border-radius: 3px 3px 0 0;
+  color: $color-grey;
+  font-size: $font-size-h7;
+
+
+  .client-status{
+
+    &:before{
+      display: inline-block;
+      font-family: 'FontAwesome';
+      content: '\f111';
+      font-size: $font-size-h8;
+    }
+
+    display: block;
+    padding: .3rem;
+    color: rgba(white,.5);
+
+    &.online{
+      color: $color-success;
+    }
+    &.offline{
+      color: $color-error;
+    }
+    &.unknown{
+      color: $color-info;
+    }
+  }
+}

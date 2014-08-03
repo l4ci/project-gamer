@@ -1,0 +1,45 @@
+/* ==========================================================================
+   MIXINS
+   ========================================================================== */
+
+  .group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* LISTS
+     ========================================================================== */
+    @mixin horizontal-list{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0;
+
+      li{
+        font-size: 1rem;
+        display: inline-block;
+      }
+    }
+
+    @mixin vertical-list{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li{
+        font-size: 1rem;
+        display: block;
+      }
+    }
+
+/* BREAKPOINTS
+   ========================================================================== */
+
+@mixin bp($point,$width:"max-width") {
+  @if ($MQs == true) {
+    @media (unquote($width) : $point){
+      @content;
+    }
+  }
+}

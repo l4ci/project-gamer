@@ -1,0 +1,76 @@
+/* ==========================================================================
+   1. VARIABLES
+   ========================================================================== */
+
+  /* 1.1. COLORS
+     ========================================================================== */
+    $color-black: #141823;
+    $color-body: #E9EAED;
+
+    // $color-grey: #5A6772;
+    // $color-grey--light: lighten($color-grey,45%);
+    // $color-grey--dark: darken($color-grey,15%);
+
+    $color-grey: #848484;
+    $color-grey--dark: darken($color-grey,35%);
+    $color-grey--light: lighten($color-grey,30%);
+
+    $color-red: #E15258;
+    $color-red--dark: darken($color-red,10%);
+    $color-red--light: lighten($color-red,10%);
+
+    $color-green: #88B759;
+    $color-green--dark: darken($color-green,10%);
+    $color-green--light: lighten($color-green,10%);
+
+    $color-aqua: #53BBB4;
+
+    $color-blue: #0BF;
+    $color-blue--dark: darken($color-blue,10%);
+    $color-blue--light: lighten($color-blue,10%);
+    $color-blue--variant: #838CC7;
+
+    $color-purple: #A88ADE;
+    $color-orange: #FF7300;
+    $color-yellow: #E0AB18;
+
+  /* 1.2. COLOR DEFINITION
+     ========================================================================== */
+    $color-primary: $color-blue;
+    $color-secondary: $color-blue--variant;
+
+    $color-danger: $color-red;
+    $color-error: $color-red;
+    $color-success: $color-green;
+    $color-info: $color-aqua;
+
+
+  /* 1.3. FONT-SIZES
+     ========================================================================== */
+    $font-size-h1: 3rem;
+    $font-size-h2: 2.5rem;
+    $font-size-h3: 2rem;
+    $font-size-h4: 1.5rem;
+    $font-size-h5: 1rem;
+    $font-size-h6: .9rem;
+    $font-size-h7: .7rem;
+    $font-size-h8: .5rem;
+    $font-size-p: 1rem;
+
+  /* 1.4 HEIGHTS
+     ========================================================================== */
+    $footer-height: 3.125rem;
+    $topbar-height: 3.125rem;
+
+  /* 1.5 BORDER RADIUS
+     ========================================================================== */
+    $border-radius: 3px;
+
+  /* 1.6 BREAKPOINTS
+      ========================================================================== */
+    $MQs : true; // enable breakpoints
+    $bp-s: 18.75em;  // 300px
+    $bp-m: 37.5em;   // 600px
+    $bp-l: 62.5em;   // 1000px
+    $bp-xl: 93.75em; // 1500px
+

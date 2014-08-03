@@ -1,0 +1,25 @@
+/* FOOTER
+   ========================================================================== */
+.footer{
+  height: $footer-height;
+
+  ul{
+    @include horizontal-list;
+    @include span(12);
+    border-top: 1px solid rgba(black,.2);
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+
+    li{
+      margin: .2rem 1rem 0 .2rem;
+      font-size: $font-size-h7;
+    }
+
+    a{
+      color: $color-grey;
+      &:hover{
+        color: $color-grey--dark;
+      }
+    }
+  }
+}

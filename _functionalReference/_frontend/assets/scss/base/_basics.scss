@@ -1,0 +1,69 @@
+/* ==========================================================================
+   BASICS
+   ========================================================================== */
+html{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  background: none;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+
+  line-height: 1.45;
+  background: $color-body;
+  color: $color-black;
+}
+
+
+*,*:before,*:after{
+  box-sizing: border-box;
+}
+
+
+/* Viewport Fix */
+@-ms-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+
+a{
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+
+  &.circle{
+    border-radius: 50%;
+  }
+}
+
+::-moz-selection {
+  background: #333;
+  color: white;
+}
+::selection {
+  background: #333;
+  color: white;
+}
