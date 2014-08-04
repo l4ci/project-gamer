@@ -1,11 +1,6 @@
 <?php
 class GamesController extends AppController {
-	var $name = "Games";
-
-	public $scaffold = 'admin';
-	public $helpers = array('Html', 'Form', 'Session');
-  public $components = array('Session');
-
+	public $name = 'Games';
 
 	public function index() {
 		$this->set('games', $this->Game->find('all'));
@@ -13,7 +8,7 @@ class GamesController extends AppController {
 
 
 	/**
-	 * VIEW a single game by id
+	 * VIEW - a single game by id
 	 */
 	public function view($id = null) {
     if (!$id) {
@@ -29,7 +24,7 @@ class GamesController extends AppController {
 
 
   /**
-   * ADD a single game
+   * ADD - a single game
    */
   public function add() {
     if ($this->request->is('post')) {
@@ -43,7 +38,7 @@ class GamesController extends AppController {
   }
 
   /**
-   * EDIT a single game
+   * EDIT - a single game
    */
   public function edit($id = null) {
     if (!$id) {
@@ -73,7 +68,7 @@ class GamesController extends AppController {
 
 
 	/**
-	 * DELETE a single game by id
+	 * DELETE - a single game by id
 	 */
 	public function delete($id) {
     if ($this->request->is('get')) {

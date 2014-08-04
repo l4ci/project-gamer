@@ -1,11 +1,4 @@
-<h1>Games <small><?php
-echo $this->Html->link(
-	'Admin View',
-	array(
-		'admin' => true
-	)
-);
-?></small></h1>
+<h1>Games</h1>
 
 <?php echo $this->Html->link(
     'Add Game',
@@ -33,8 +26,3 @@ array('controller' => 'games', 'action' => 'view', $game['Game']['id'])); ?>
     <?php endforeach; ?>
     <?php unset($game); ?>
 </table>
-
-<?php echo $this->Html->link(
-    'Add Game',
-    array('controller' => 'games', 'action' => 'add')
-); ?>

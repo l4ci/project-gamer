@@ -12,6 +12,24 @@ class Game extends AppModel {
 				'rule' => 'isUnique',
 				'message' => 'Game with this title already exists.'
 			)
+    ),
+    'description' => array(
+  		'notEmpty' => array(
+        'rule' => 'notEmpty',
+				'message' => 'Please enter a description of the game.'
+			)
+    ),
+    'link' => array(
+  		'notEmpty' => array(
+        'rule' => 'notEmpty',
+				'message' => 'Please enter a link to the game store or official page.'
+			)
+    ),
+    'type' => array(
+  		'notEmpty' => array(
+        'rule' => 'notEmpty',
+				'message' => 'Please select what type of game this is.'
+			)
     )
   );
 }
